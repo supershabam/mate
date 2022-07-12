@@ -37,7 +37,10 @@ fn main() {
             false,
         ))
         .setup(|app| {
+            // do not allow cmd+tab to display application; 
+            // also do not allow focus to program name in menu bar
             app.set_activation_policy(tauri::ActivationPolicy::Accessory);
+            // force-set auto-launch; TODO make configurable
             let manager: State<'_, AutoLaunchManager> = app.try_state().unwrap();
             manager.enable()?;
             Ok(())
