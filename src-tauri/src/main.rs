@@ -8,6 +8,8 @@ use std::sync::{Arc, Mutex};
 use tauri::State;
 
 use tauri::{Manager, SystemTray, SystemTrayEvent};
+use tauri_plugin_autostart::AutoLaunchManager;
+use tauri_plugin_autostart::MacosLauncher;
 
 pub struct NoSleepState {
     prevent: bool,
@@ -30,6 +32,15 @@ fn main() {
     let tray = SystemTray::new().with_icon(mate_waiting_icon.try_into().unwrap());
 
     tauri::Builder::default()
+        .plugin(tauri_plugin_autostart::init(
+            MacosLauncher::AppleScript,
+            false,
+        ))
+        .setup(|app| {
+          let manager: State<'_, AutoLaunchManager> = app.try_state().unwrap();
+          manager.enable()?;
+          Ok(())
+        })
         .system_tray(tray)
         .manage(state)
         .on_system_tray_event(|app, event| match event {
