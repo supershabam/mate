@@ -17,8 +17,9 @@ tauri-build = { version = "1.0.3", features = [] }
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.0.3", features = ["api-all"] }
-tauri-plugin-nosleep = "0.1.0"
+tauri = { version = "1.0.3", features = ["api-all", "system-tray"] }
+nosleep = { version = "0.2.0", features = ["serde"] }
+# tauri-plugin-nosleep = "0.1.0"
 
 [features]
 # by default Tauri runs in production mode
