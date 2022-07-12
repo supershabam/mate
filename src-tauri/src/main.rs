@@ -10,14 +10,14 @@ use tauri::State;
 use tauri::{Manager, SystemTray, SystemTrayEvent};
 
 pub struct NoSleepState {
-    enable: bool,
+    prevent: bool,
     handle: NoSleep,
 }
 
 impl Default for NoSleepState {
     fn default() -> Self {
         NoSleepState {
-            enable: false,
+            prevent: false,
             handle: NoSleep::new().unwrap(),
         }
     }
@@ -25,25 +25,35 @@ impl Default for NoSleepState {
 
 fn main() {
     let state = Arc::new(Mutex::new(NoSleepState::default()));
+    let mate_waiting_icon =
+        tauri::Icon::Raw(include_bytes!("../icons/mate-waiting/icon.ico").to_vec());
+    let tray = SystemTray::new().with_icon(mate_waiting_icon.try_into().unwrap());
 
-    let tray = SystemTray::new();
     tauri::Builder::default()
         .system_tray(tray)
         .manage(state)
         .on_system_tray_event(|app, event| match event {
             SystemTrayEvent::LeftClick { .. } => {
+                let mate_waiting_icon =
+                    tauri::Icon::Raw(include_bytes!("../icons/mate-waiting/icon.ico").to_vec());
+                let mate_drinking_icon =
+                    tauri::Icon::Raw(include_bytes!("../icons/icon.ico").to_vec());
                 let state: State<'_, Arc<Mutex<NoSleepState>>> = app.try_state().unwrap();
                 let mut no_sleep = state.lock().unwrap();
-                no_sleep.enable = !no_sleep.enable;
-                if no_sleep.enable {
-                    println!("sleeping enabled");
+                no_sleep.prevent = !no_sleep.prevent;
+                if !no_sleep.prevent {
                     no_sleep.handle.stop().unwrap();
+                    app.tray_handle()
+                        .set_icon(mate_waiting_icon.clone())
+                        .unwrap();
                 } else {
-                    println!("sleeping disabled");
                     no_sleep
-                    .handle
-                    .start(NoSleepType::PreventUserIdleDisplaySleep)
-                    .unwrap();
+                        .handle
+                        .start(NoSleepType::PreventUserIdleDisplaySleep)
+                        .unwrap();
+                    app.tray_handle()
+                        .set_icon(mate_drinking_icon.clone())
+                        .unwrap();
                 }
             }
             _ => {}
