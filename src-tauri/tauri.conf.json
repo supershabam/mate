@@ -57,14 +57,6 @@
     "updater": {
       "active": false
     },
-    "windows": [
-      {
-        "fullscreen": false,
-        "height": 600,
-        "resizable": true,
-        "title": "mate",
-        "width": 800
-      }
-    ]
+    "windows": []
   }
 }
