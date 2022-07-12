@@ -37,9 +37,10 @@ fn main() {
             false,
         ))
         .setup(|app| {
-          let manager: State<'_, AutoLaunchManager> = app.try_state().unwrap();
-          manager.enable()?;
-          Ok(())
+            app.set_activation_policy(tauri::ActivationPolicy::Accessory);
+            let manager: State<'_, AutoLaunchManager> = app.try_state().unwrap();
+            manager.enable()?;
+            Ok(())
         })
         .system_tray(tray)
         .manage(state)
