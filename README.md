@@ -8,8 +8,9 @@ demonstrating the ability to create and distribute a taskmenu-only style applica
 
 ## technical roadmap
 
-[x] right-click menu for quit
-[ ] auto-update using tauri system
-[ ] build for windows
-[ ] build for linux
-[ ] toggle start upon boot
+[x] right-click menu for quit  
+[x] auto-update using tauri system  
+[ ] build for windows  
+[ ] build for linux  
+[ ] toggle start upon boot  
+[ ] automate creating releases and updating `updater.json`  
