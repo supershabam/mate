@@ -56,7 +56,12 @@
       "csp": null
     },
     "updater": {
-      "active": false
+      "active": true,
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDgxNzEwOUE4OEM0NjJBQjcKUldTM0trYU1xQWx4Z2JwTVdjaWxtOUZ1Q0xtODVxcHJGejBjSVd5R20vemxLV2pNL1liNXR5TDcK",
+      "endpoints": [
+        "https://mate-update-server.supershabam.com/update/{{target}}/{{current_version}}"
+      ]
     },
     "windows": []
   }
