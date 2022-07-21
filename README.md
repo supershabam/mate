@@ -14,3 +14,4 @@ demonstrating the ability to create and distribute a taskmenu-only style applica
 [ ] build for linux  
 [ ] toggle start upon boot  
 [ ] automate creating releases and updating `updater.json`  
+[ ] lock dependencies instead of using git reference to main in tauri-plugin-autostart  
