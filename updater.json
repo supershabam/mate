@@ -4,12 +4,12 @@
   "pub_date": "2022-07-20T20:56:00Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTM0trYU1xQWx4Z1hHR3l0VXZRSkR0a09JbDAySlBZVVNMaGYwT05IbXRHeFNQZjNMQVExaWtzcHlNeEViSHU0djI1ZDU0T081cUJ6L0xXK2Y5b09KVXByVzZHTE5aUmdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjU4MzcyNDExCWZpbGU6bWF0ZS5hcHAudGFyLmd6ClNMRHhTZmNLM25mVGRRQUdnYTJGSnB2WVVLdzVSR2ptalFERFFhK1BEaTI0MXY2Z2x3cTVwN1VtREhFc3NyYkc4c3lYN1VQcnZyNVEyNVJMWUtSQkR3PT0K",
-      "url": "https://github.com/supershabam/mate/releases/download/v0.1.2/mate_0.1.1_x64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTM0trYU1xQWx4Z1czYlZReXlLU0ZUTkRNZWFRdmRNVkR6R2N6MS9KRjU0NCtzR3lUR1FMamFhOEVhYmkxbG5ucWcwbTNoOWhMR0svTEV6MEs2ZG03OXdCMXFtVDZnR3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjU4MzcyOTE2CWZpbGU6bWF0ZS5hcHAudGFyLmd6CnQ5bHJqS0lOSGRMRWFrMUdiWXRqeStwQ0xOZmIzTEQ3ZmcxaGNxKzJTVVBTZkJaakRFQVRwTmtHRmlubExlT2Myc1NZWFRrY1d6OHlmTTc3RVJYcUNRPT0K",
+      "url": "https://github.com/supershabam/mate/releases/download/v0.1.2/mate_0.1.2_x64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTM0trYU1xQWx4Z1F2a1lFOW52bmRwT3JMM2hTU3k4ZUdsUXFjUFlrVXMySUs3N3hJRHdFOGxORldocDdJcUs3bWNvSjJjU0l2ZnBJTlhUTjQ5bzFQTTdjV1p4SnNCSEFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjU4MzcyMzIyCWZpbGU6bWF0ZS5hcHAudGFyLmd6Ck9tc3FBOEQxN3ZyZEU3SVVRVUZyT2h5ZkUzSldoRFcraUhHdDNVRUVQaWZ4b1AzU0dvdm5lR056UWlPRHg3RlhTay9EMGdaSHRXbGx4NjhrSXUwRUR3PT0K",
-      "url": "https://github.com/supershabam/mate/releases/download/v0.1.2/mate_0.1.1_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTM0trYU1xQWx4Z1N3VFpWN1lyOWhUVDVzYmEzOXZuUGxrOHZZMHNKNlJlWXdlVDVnc1NhK2prbTAyYjJ0cU90bGc4RXJ6TnJka0tuLzBIbVRGUWRWRVRxV0JFQjNwcmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjU4MzcyODQ1CWZpbGU6bWF0ZS5hcHAudGFyLmd6CjhucGwvY1AwcUtYa2cySmdBWkd3WmVVUTZrWjkxOGVBM3ZuMXBlR3RhYitVdFpPa1RzMEJXd0hXNkQyZFNYVkl3a2VRNFF2dE1sd2l6ODNWWEFYeEFRPT0K",
+      "url": "https://github.com/supershabam/mate/releases/download/v0.1.2/mate_0.1.2_aarch64.app.tar.gz"
     }
   }
 }
